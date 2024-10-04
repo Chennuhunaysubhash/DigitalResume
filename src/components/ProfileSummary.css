@@ -1,0 +1,57 @@
+.profile-summary {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 20px; /* Margin around the section */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.profile-summary:hover {
+    background-color: #e7f3ff; /* Change background color on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increase shadow for depth on hover */
+    transform: scale(1.02); /* Slightly enlarge the section on hover */
+}
+
+h3 {
+    font-size: 2rem; /* Large font size for the section title */
+    color: #4a90e2; /* Blue color */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif; /* Modern font for subheadings */
+    font-size: 1.2rem; /* Font size for subheadings */
+    font-weight: 600; /* Semi-bold for emphasis */
+    color: #0077b5; /* Darker blue color */
+    margin: 5px 0; /* Space above and below subheadings */
+}
+
+p {
+    font-family: 'Open Sans', sans-serif; /* Clean font for paragraphs */
+    font-size: 1rem; /* Base font size for readability */
+    color: #333; /* Dark gray text color */
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    margin-bottom: 20px; /* Space below each list item */
+    border-bottom: 1px solid #ddd; /* Light border for separation */
+    padding-bottom: 15px; /* Space below content */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and transform */
+}
+
+li:hover {
+    background-color: #e7f3ff; /* Light blue background on hover */
+    transform: scale(1.02); /* Slightly enlarge the item on hover */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border for the last list item */
+}

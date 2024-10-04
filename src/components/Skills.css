@@ -1,0 +1,65 @@
+/* Skills.css */
+
+.skills-section {
+  background-color: #f7f8fa; /* Light background */
+  padding: 50px 20px; /* Generous padding */
+  margin: 20px; /* Space around the section */
+  display: flex; /* Flex layout */
+  flex-wrap: wrap; /* Allow wrap for cards */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center cards */
+}
+
+.skills-section h3 {
+  width: 100%; /* Full width */
+  text-align: center; /* Center heading */
+  color: #333; /* Dark grey for heading */
+  font-size: 2.2rem; /* Larger font size */
+  margin-bottom: 30px; /* More space below the heading */
+  text-transform: uppercase; /* Uppercase heading */
+  letter-spacing: 1px; /* Spacing between letters */
+}
+
+.skills-card {
+  background-color: white; /* White background for card */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 10px; /* Rounded corners for the card */
+  padding: 25px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Soft shadow */
+  width: 280px; /* Fixed width for each card */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.skills-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+.skills-card h4 {
+  color: #2c3e50; /* Dark blue for category heading */
+  font-size: 1.5rem; /* Larger font */
+  margin-bottom: 15px; /* Space below the category heading */
+  font-weight: 600; /* Bold text */
+}
+
+.skills-card ul {
+  list-style: none; /* Remove list styling */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.skills-card li {
+  background-color: #e0e7ff; /* Light blue background for badges */
+  color: #2c3e50; /* Dark text */
+  border-radius: 20px; /* Rounded badges */
+  padding: 8px 15px; /* Padding for skill badges */
+  margin: 8px 0; /* Space between badges */
+  font-size: 1rem; /* Standard font size */
+  font-weight: 500; /* Medium font weight */
+  display: inline-block; /* Horizontal alignment */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.skills-card li:hover {
+  background-color: #9aa6f0; /* Darker blue on hover */
+}

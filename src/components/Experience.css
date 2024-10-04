@@ -1,0 +1,33 @@
+/* Experience.css */
+
+.experience-section {
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the section */
+    margin: 20px; /* Space around the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .experience-section h3 {
+    color: #4a90e2; /* Blue color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .experience-section ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .experience-section li {
+    border-left: 4px solid #4a90e2; /* Blue left border */
+    padding: 10px 10px 10px 20px; /* Padding inside list items */
+    margin-bottom: 15px; /* Space between experiences */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  .experience-section strong {
+    display: block; /* Make the position bold as a block */
+    color: #333; /* Dark text color for position */
+  }
+  

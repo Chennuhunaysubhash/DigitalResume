@@ -1,0 +1,28 @@
+/* Education.css */
+
+.education-section {
+    background-color: #f4f4f4; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the section */
+    margin: 20px; /* Space around the section */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .education-section h3 {
+    color: #4a90e2; /* Blue color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+  }
+  
+  .education-section ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+  }
+  
+  .education-section li {
+    padding: 10px; /* Padding for list items */
+    margin-bottom: 15px; /* Space between items */
+    background-color: #fff; /* White background */
+    border-radius: 5px; /* Rounded corners */
+    border-left: 4px solid #4a90e2; /* Blue left border */
+  }
+  

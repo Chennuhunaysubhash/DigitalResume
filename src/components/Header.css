@@ -1,0 +1,96 @@
+header {
+    position: relative; /* Make header a positioning context for the overlay */
+    background-image: url('C:\Users\hunay\Desktop\React Learning\my-resume\src\images\header-4.png'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the image */
+    color: white; /* White text color */
+    text-align: center; /* Centered text */
+    padding: 40px 20px; /* Top/bottom padding and left/right padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    margin: 20px; /* Space around header */
+}
+
+header::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position it relative to the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    border-radius: 8px; /* Match header's border radius */
+    z-index: 0; /* Send it to the back */
+}
+
+h1, h2 {
+    position: relative; /* Position text above the overlay */
+    z-index: 1; /* Bring the text above the overlay */
+}
+
+
+h1 {
+    font-size: 2.5rem; /* Large font size for the name */
+    margin: 0; /* Remove default margin */
+    transition: color 0.3s, transform 0.3s; /* Transition for color and transform */
+}
+
+h1:hover {
+    color: #0077b5; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+h2 {
+    font-size: 1.5rem; /* Medium font size for the title */
+    margin: 10px 0 0; /* Margin to space from the name */
+    font-weight: 300; /* Light font weight */
+    transition: color 0.3s, transform 0.3s; /* Transition for color and transform */
+}
+
+h2:hover {
+    color: #ffcc00; /* Change color on hover */
+    transform: scale(1.05); /* Slightly enlarge the text */
+}
+
+.social-icons {
+    display: flex; 
+    justify-content: center; /* Center the icons horizontally */
+    gap: 1rem; /* Space between icons */
+    margin-top: 20px; /* Optional: Add space above the icons */
+}
+
+.icon-link {
+    position: relative; /* Positioning context for the tooltip */
+    color: #ffffff; /* Default icon color */
+    font-size: 1.5rem; /* Adjust size */
+    transition: color 0.3s, transform 0.3s; /* Transition for color and transform */
+}
+
+.icon-link:hover {
+    color: #ffcc00; /* Change icon color on hover (Yellow color) */
+    transform: scale(1.1) rotate(10deg); /* Scale and rotate the icon slightly */
+}
+
+/* Tooltip styles */
+.tooltip {
+    visibility: hidden; /* Hidden by default */
+    width: 70px; /* Set a width */
+    background-color: #0077b5; /* Tooltip background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding */
+    position: absolute; /* Position relative to the icon */
+    z-index: 1; /* Ensure it appears above other elements */
+    top: 120%; /* Position it below the icon */
+    left: 50%; /* Center it horizontally */
+    margin-left: -35px; /* Adjust left offset */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s; /* Fade-in effect */
+    font-size: 0.9rem; /* Adjust the tooltip text size (smaller size) */
+}
+
+.icon-link:hover .tooltip {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Fade-in effect */
+}
